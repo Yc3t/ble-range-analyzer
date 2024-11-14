@@ -26,4 +26,7 @@ export const bleRoutes = new Hono()
 
         }
     )
+     .get("/configurations", c => {
+        return c.json(configStore)
+    })
 
